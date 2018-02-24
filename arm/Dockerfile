@@ -10,6 +10,7 @@ ENV CC arm-linux-gnueabihf-gcc-with-link-search
 ENV CXX arm-linux-gnueabihf-g++-with-link-search
 ENV PATH $CC_DIR:$PATH:/root/.cargo/bin
 ENV ROOT_FS /
+ENV PKG_CONFIG_ALLOW_CROSS 1
 
 COPY include/config /tmp/.cargo/
 COPY include/arm-linux-gnueabihf-gcc-with-link-search /usr/local/sbin/
